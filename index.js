@@ -15,7 +15,7 @@ const result = babylon.parse(component, {
 traverse(result, {
   enter(path) {
     if (t.isExportDefaultDeclaration(path.node)) {
-      console.log(path.node);
+      console.log(path.node.declaration.name);
     }
   }
 });
