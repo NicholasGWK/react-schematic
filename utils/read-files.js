@@ -1,6 +1,15 @@
 import fs from 'fs';
 
-const ignoreFiles = ['yarn.lock', 'package.json', 'index.js', '.gitignore'];
+// This is starting to get a bit out of control
+const ignoreFiles = [
+  'yarn.lock',
+  'package.json',
+  'index.html',
+  'index.js',
+  '.gitignore',
+  'out.json',
+  'viz.js',
+];
 
 /**
  * Ignores directories for now, should be extended to handle recursion through dirs?
